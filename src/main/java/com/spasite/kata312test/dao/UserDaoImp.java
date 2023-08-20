@@ -33,8 +33,6 @@ public class UserDaoImp implements UserDao {
         User userToBeUpdated = getUserById(id);
         userToBeUpdated.setName(updatedUser.getName());
         userToBeUpdated.setAge(updatedUser.getAge());
-
-        entityManager.persist(userToBeUpdated);
     }
 
     @Override
